@@ -3,341 +3,454 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyen Hai Page</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Charmonman&display=swap" rel="stylesheet">
+    <title>Food Project Nguyen Hai</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
-
 <body>
+
+    <!-- ========= Start Herder========== -->
+    
     <header>
-        <a href="#" class="logo">NguyenHai</a>
-        <div class="toggle" onclick="toggleMenu()"></div>
-        <ul class="menu">
-            <li> <a href="#home" onclick="toggleMenu()" >Home</a></li>
-            <li> <a href="#about" onclick="toggleMenu()">About</a></li>
-            <li> <a href="#services" onclick="toggleMenu()">Services</a></li>
-            <li> <a href="#work" onclick="toggleMenu()">Work</a></li>
-            <li> <a href="#testimonial" onclick="toggleMenu()">Testimonial</a></li>
-            <li> <a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <!-- <a href="#banner" class="logo" >Food<span>.</span></a> -->
+        <a href="#banner" class="logo" >Food<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();">
+
+        </div>
+        <ul class="navigation">
+          <li><a onclick="toggleMenu()" href="#banner">Home</a></li>  
+          <li><a onclick="toggleMenu()" href="#about">About</a></li>   
+          <li><a onclick="toggleMenu()" href="#menu">Menu</a></li>  
+          <li><a onclick="toggleMenu()" href="#expert">Expert</a></li>  
+          <li><a onclick="toggleMenu()" href="#testimonials">Testimonials</a></li>  
+          <li><a onclick="toggleMenu()" href="#contact">Contact</a></li>  
         </ul>
     </header>
+     <!-- ========= End Header========== -->
 
-    <section class="banner" id="home">
-        <div class="textBx" data-0-top="opacity:0;left:100px;" data-200-top="opacity:1;left:0;">
-            <h2>Hello, I'm<br><span>Nguyễn Ngọc Hải.</span></h2>
-            <h3>I'm a Front End Web Developer.</h3>
-            <a href="https://i.topcv.vn/nguyenngochai?ref=3493649" class="btn">Download CV</a>
-        </div>
 
-        
-        <ul class="sci">
-            <li><a href="https://www.facebook.com/nguyenngochai159"><img src="./pepsi img/facebook.png" alt=""></a></li>
-            <li><a href=""><img src="./pepsi img/twitter.png" alt=""></a></li>
-            <li><a href="https://www.instagram.com/nguyenngochai_/"><img src="./pepsi img/instagram.png" alt=""></a></li>
-        </ul>
-        <div class="custom-shape-divider-bottom-1600919443">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-            </svg>
-        </div>
-        
-    </section>
 
-    <section class="about" id="about">
-        <div class="heading">
-            <h2>About me</h2>
-        </div>
+     <!-- ========= Start Banner ======= -->
+    <section class="banner" id="banner">
         <div class="content">
-            <div class="contentBx w50">
-                <h3 data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:500px;">I'm a Front End Web Developer.</h3>
-                <p data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-500px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                 Aspernatur, accusantium adipisci nostrum sint aliquid numquam ex harum reiciendis 
-                 dicta fuga earum soluta sit aut laudantium tempora alias nesciunt omnis eligendi? <br> <br>
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae deserunt nam ad vero molestias.
-                  Nisi maiores fugit consequatur, temporibus laudantium provident reiciendis earum beatae illo odit veritatis, 
-                  expedita inventore voluptate.
-                </p> 
-            </div>
-            <div class="w50" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:200px;">
-                <img src="./img/img22.jpg" class="img" alt="">
-            </div>
-        </div>
-    </section>
-
-    <!-- Video Never give up -->
-
-    <section class="video__never">
-        <video class="video__file" muted loop autoplay playsinline src="./code-video.mp4"></video>
-        <div class="video__overlay"></div>
-        <div class="video__text">
-            <h2 class="video__title"> Be a stronger</h2>
-            <span>never give up </span>
-            
-            <p class="video__desc">
-               Everything worth doing is going to have some obstacles. Some people look at setbacks
-                as evidence that whatever it is they've been striving for just wasn't meant to be. But
-               Don't never give up your dream! Be stronger! You can do it!, Just do it!.
-               
+            <h2>Always Choose Good</h2>
+            <p>One of the ways we live our ethos is through our food.
+             Every item on NguyenHai-Food menu is all-natural, fresh, and sourced locally. And you won’t find any item more than $10. Now that’s good!
             </p>
-
-        </div>
-
-
-    </section>
-
-    <!-- End Video Never give up -->
-    <section class="services" id="services">
-        <div class="heading white">
-            <h2 data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:200px;">Our Services</h2>
-            <p data-center-center="opacity:1;right:0;" data-0-bottom="opacity:1;right:500px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        
-        <div class="content">
-            <div class="servicesBx">
-                <img src="./img/icon1.png" alt="">
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet modi aperiam quia, ullam, repellat adipisci qui quaerat perspiciatis atque.</p>
-            </div>
-
-            <div class="servicesBx">
-                <img src="./img/icon2.png" alt="">
-                <h2>Web Development</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet modi aperiam quia, ullam, repellat adipisci qui quaerat perspiciatis atque.</p>
-            </div>
-
-            <div class="servicesBx">
-                <img src="./img/icon3.png" alt="">
-                <h2>Androi App</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet modi aperiam quia, ullam, repellat adipisci qui quaerat perspiciatis atque.</p>
-            </div>
-
-            <div class="servicesBx">
-                <img src="./img/icon4.png" alt="">
-                <h2>Photography</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet modi aperiam quia, ullam, repellat adipisci qui quaerat perspiciatis atque.</p>
-            </div>
-
-            <div class="servicesBx">
-                <img src="./img/icon5.png" alt="">
-                <h2>Content Writing</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet modi aperiam quia, ullam, repellat adipisci qui quaerat perspiciatis atque.</p>
-            </div>
-
-            <div class="servicesBx">
-                <img src="./img/icon6.png" alt="">
-                <h2>Video Editting</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet modi aperiam quia, ullam, repellat adipisci qui quaerat perspiciatis atque.</p>
-            </div>
-
+            <a class="btn" href="#menu">Our Menu</a>
         </div>
     </section>
+    <!-- ========= End Banner ========== -->
 
-    <section class="work" id="work">
-        <div class="heading">
-            <h2>Out Later Work</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-        </div>
-        <div class="content">
-            <div class="workBx">
-                <img src="./img/product1.jpg" alt="">
-            </div>
 
-            <div class="workBx">
-                <img src="./img/product2.jpg" alt="">
-            </div>
 
-            <div class="workBx">
-                <img src="./img/product3.jpg" alt="">
-            </div>
 
-            <div class="workBx">
-                <img src="./img/product4.jpg" alt="">
-            </div>
-        </div>
-        <div class="heading">
-            <a href="" class="btn-1">View More</a>
-        </div>
-    </section>
+    <!-- ========= Start About ========== -->
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50 out-in-left">
+                <h2 class="title-Text"><span>A</span>bout Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Voluptatem sed natus optio ipsum sequi necessitatibus 
+                     deleniti pariatur adipisci et error veritatis sit odio dolorem aliquid in,
+                    nesciunt maxime animi iste! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                     Sit voluptate rem aspernatur ipsum pariatur, aperiam tempora laudantium deserunt? Ea
+                      ad harum ducimus iure sit iusto veritatis commodi at quaerat deserunt. <br><br> Lorem ipsum dolor sit amet consectetur
+                     adipisicing elit. Placeat cum, unde pariatur, esse quis adipisci, impedit 
+                     ratione aspernatur quam officiis aperiam. Facere earum expedita voluptas possimus
+                      laudantium repellendus libero dolore?
 
-    <!--Testimonial  -->
-    <section class="testimonial" id="testimonial">
-        <div class="heading">
-            <h2>Testimonial</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-        </div>
-        <div class="content">
-            <div class="testimonialBx">
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quibusdam illum dolor perferendis architecto ex dolore, libero hic! Incidunt, veritatis reiciendis sapiente nesciunt numquam placeat quidem dolorem atque vitae perferendis."
                 </p>
-                <h3>"Someone Famous" <br><span>Cretive Designer</span></h3>
             </div>
-            <div class="testimonialBx">
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quibusdam illum dolor perferendis architecto ex dolore, libero hic! Incidunt, veritatis reiciendis sapiente nesciunt numquam placeat quidem dolorem atque vitae perferendis."
-                </p>
-                <h3>"Someone Famous" <br><span>Cretive Designer</span></h3>
+
+            <div class="col50 out-in-right">
+                <div class="imgBx">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qErl4he7eMw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
             </div>
+
         </div>
     </section>
+    <!-- ========= End About ============ -->
 
-    <!-- CONTACT -->
-    <section class="contact" id="contact">
-        <div class="heading white">
-            <h2>Contact Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+    <!-- ========= Start Menu =========== -->
+    <section class="menu" id="menu">
+
+        <div class="title">
+            <h2 class="title-Text">Our <span>M</span>enu</h2>
+            <p>Every item on NguyenHai-Food menu is all-natural, fresh, and sourced locally.</p>
         </div>
 
         <div class="content">
-            <div class="contactInfo">
-                <h3>Contact Info</h3>
-                <div class="contactInfoBx">
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fa fa-map-marker"></i>
-                        </div>
-                        <div class="text">
-                            <h3>Address</h3>
-                            <p>Xã Duy Ninh, <br>Huyện Quảng Ninh, <br>Tỉnh Quảng Bình</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fa fa-phone"></i>
-                        </div>
-                        <div class="text">
-                            <h3>Phone</h3>
-                            <p>0377.866.879</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fa fa-envelope-o"></i>
-                        </div>
-                        <div class="text">
-                            <h3>Email</h3>
-                            <p>Maillamviechai@gmail.com</p>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-            <div class="formBx">
-                <form>
-                    <h3>Message Me</h3>
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
-                    <textarea placeholder="Your Message"></textarea>
-                    <a href="" class="sendInfo">SEND</a>
-
-                </form>
-            </div>
-        </div>
-    </section>
-    
-    
-
-<!--     <section class="sec"> 
-        <div class="contentPespi">
-            <div class="textBox">
-                <h2>That's What <br><span>I Like</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quae, laborum dignissimos laudantium iure nam, possimus architecto illum repellendus voluptate quos quisquam repellat.</p>
-                <a href="">View All Products</a>
-            </div>
-
-            <div class="imgBox">
-                <img src="./pepsi img/pepsi001.png" class="pepsi" alt="">
-            </div>
-
-            <div class="product-pepsi">
-                <ul class="thumb">
-                    <li><img src="./pepsi img/pepsi001.png" onclick="imgSlider('./pepsi img/pepsi001.png');changeBgColor('#0062be')" alt=""></li>
-                    <li><img src="./pepsi img/pepsi002.png" onclick="imgSlider('./pepsi img/pepsi002.png');changeBgColor('#e60c2c')" alt=""></li>
-                    <li><img src="./pepsi img/pepsi003.png" onclick="imgSlider('./pepsi img/pepsi003.png');changeBgColor('#1e1e1e')" alt=""></li>
-                </ul>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/menu1.jpg" alt="">
+                </div>
                
+
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star no-star"></i>
+                    <div class="box-content__float">
+                        <span><i onclick="addReaction()" class="far fa-thumbs-down active-icon"></i></span>
+                        <span><i onclick="addReactionHeart()" class="fas fa-heart active-icon-heart"></i></span>
+                    </div>
+                </div>
+
+                <div class="price-eating">
+                    <p>$12</p>
+                </div>
+
+                <div class="text">
+                    <h3>Special Bowl</h3>
+                </div>
+
+                
+            </div>
+
+            
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/menu2.jpg" alt="">
+                </div>
+
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <div class="box-content__float">
+                        <span><i onclick="addReaction()" class="far fa-thumbs-down active-icon"></i></span>
+                        <span><i onclick="addReactionHeart()" class="fas fa-heart"></i></span>
+                    </div>
+                </div>
+                
+                <div class="price-eating">
+                    <p>$13</p>
+                </div>
+
+
+                <div class="text">
+                    <h3>Special Soup</h3>
+                </div>
+
+                
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/menu3.jpg" alt="">
+                </div>
+
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star no-star"></i>
+                    <div class="box-content__float">
+                        <span href=""><i onclick="addReaction()" class="far fa-thumbs-down"></i></span>
+                        <span href=""><i class="fas fa-heart"></i></span>
+                    </div>
+                </div>
+
+                <div class="price-eating">
+                    <p>$11</p>
+                </div>
+
+                <div class="text">
+                    <h3>Special Pasta</h3>
+                </div>
+
+                
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/menu4.jpg" alt="">
+                </div>
+
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <div class="box-content__float">
+                        <span href=""><i onclick="addReaction()" class="far fa-thumbs-down"></i></span>
+                        <span href=""><i class="fas fa-heart"></i></span>
+                    </div>
+                </div>
+
+                <div class="price-eating">
+                    <p>$14</p>
+                </div>
+
+                <div class="text">
+                    <h3>Special Salads</h3>
+                </div>
+
+                
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/menu5.jpg" alt="">
+                </div>
+
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star no-star"></i>
+                    <i class="fas fa-star no-star"></i>
+                    <div class="box-content__float">
+                        <span href=""><i onclick="addReaction()" class="far fa-thumbs-down"></i></span>
+                        <span href=""><i class="fas fa-heart"></i></span>
+                    </div>
+                </div>
+
+                <div class="price-eating">
+                    <p>$10</p>
+                </div>
+
+                <div class="text">
+                    <h3>Special Soup</h3>
+                </div>
+
+                
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/menu6.jpg" alt="">
+                </div>
+
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <div class="box-content__float">
+                        <span href=""><i onclick="addReaction()" class="far fa-thumbs-down"></i></span>
+                        <span href=""><i class="fas fa-heart"></i></span>
+                    </div>
+                </div>
+
+                <div class="price-eating">
+                    <p>$14</p>
+                </div>
+
+                <div class="text">
+                    <h3>Special Sandwich</h3>
+                </div>
+
+                
             </div>
         </div>
+
+        <div class="title">
+            <a class="btn" href="/Sign-in.html">View All</a>
+        </div>
+    </section>
+
+    <!-- ========= End Menu =========== -->
+
+
+    <!-- ========= Start Expert ======= -->
+    <section class="expert" id="expert">
+
+        <div class="title">
+            <h2 class="title-Text">Our Kitchen <span>E</span>xpert</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/expert1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Someone Famous</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/expert2.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Someone Famous</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/expert3.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Someone Famous</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/expert4.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Someone Famous</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========= End Expert ========= -->
+
+
+    <!-- ====== Start Testimonials ==== -->
+    <section class="testimonials" id="testimonials">
+
+        <div class="title white">
+            <h2 class="title-Text"><span>S</span>aid About Us</h2>
+            <p> See for yourself what people are raving about.
+            .</p>
+        </div>
+
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/testi1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>"Wow!! Such a great spot doing great things for an unbeatable price. 
+                        Nothing on the menu costs more than $10 and the flavors are really great! 
+                        They have a ton of different sauces you can pick from to add on top too which was my favorite."
+                    </p>
+                    <h3>Angela Alice</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/testi2.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>"I try not to review a place unless I've been there more than once, 
+                        but the exception is if I'm totally blown away. And I WAS here!!!
+                         The price point had me unable to understand at first. $12 for a whole bowl? 
+                         $14 for sides or a pita sandwich? Insane."
+                    </p>
+                    <h3>Tom Hiddleston</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/testi3.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>"NguyenHai-Food is hands down the BEST deal in DC…. To make a great 
+                        deal even better, NguyenHai-Food donates 5% of income to refugees. So, 
+                        you can eat your yummy, fresh falafels while also doing good for the world.
+                        And I WAS here!!!."
+                    </p>
+                    <h3>Emily Trần</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ====== End Testimonials ====== -->
+
+
+    <!-- ====== Start Contact ========= -->
+    
+    <section class="contact" id="contact">
+
+        <div class="title">
+            <h2 class="title-Text"><span>C</span>ontact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="contactForm">
+            <h3>Send Me Message</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="Name">
+            </div>
+
+            <div class="inputBox">
+                <input type="text" placeholder="Email">
+            </div>
+
+            <div class="inputBox">
+                <textarea type="text" placeholder="Text"></textarea>
+            </div>
+
+            <div class="inputBox">
+                <button type="submit">Send</button>
+            </div>
+        </div>
+    </section>
+    <!-- ====== End Contact =========== -->
+
+    <section class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239413.37317354628!2d106.40082453308402!3d17.25308254270794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3140a9f5e7874919%3A0x5de6c3ed4a5536a0!2zUXXhuqNuZyBOaW5oLCBRdeG6o25nIELDrG5oLCBWaeG7h3QgTmFt!5e1!3m2!1svi!2s!4v1605347700366!5m2!1svi!2s" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <!-- ====== Start Copy Right =========== -->
+
+    <div class="copyrightText">
+        <p>Copyright © 2020 by <a href="">Nguyen Hai</a>. All Right Reserved</p>
+    </div>
+
+    <!-- ====== End Copy Right ============= -->
+
+
         
-    </section> -->
-
-    <div class="up-to-page">
-        <a href="#home"><img src="./img/up to page.png" alt=""></a>
-    </div>
-    
+              <div class="dashed-loading"></div>
 
     
-    
-
-    <div class="copyright">
-        <p>Copyright © 2020 by Nguyen Hai. All Right Reserved </p>
-    </div>
-
-  
-    <a class="call-phone" href="tel:0377866879"><img src="./call2.png" alt=""></a>
-  
 
 
-    
+
     <script type="text/javascript">
-        window.addEventListener('scroll', function() {
-            var header = document.querySelector('header');
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
             header.classList.toggle('sticky', window.scrollY > 0);
         });
 
-        window.addEventListener('scroll', function() {
-            var upToPage = document.querySelector('.up-to-page');
-            upToPage.classList.toggle('active-up-to-page', window.scrollY > 0);
-        });
-
-        window.addEventListener('scroll', function() {
-            var callPhone = document.querySelector('.call-phone');
-            callPhone.classList.toggle('active-call', window.scrollY > 0);
-        });
 
         function toggleMenu() {
-            var nemuToggle = document.querySelector('.toggle')
-            nemuToggle.classList.toggle('active')
-            var nemu = document.querySelector('.menu')
-            nemu.classList.toggle('active')
-        }
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }; 
 
-        function imgSlider (anything) {
-            document.querySelector('.pepsi').src = anything;
-        }
+        function addReaction() {
+            const addReactionColor = document.querySelector('.active-icon');
+            addReactionColor.classList.toggle('red-color');
+        };
 
-        function changeBgColor (color) {
-            const sec = document.querySelector('.sec');
-            sec.style.background = color;
-        }
+        function addReactionHeart() {
+            const addReactionColorHeart = document.querySelector('.active-icon-heart');
+            addReactionColorHeart.classList.toggle('red-color');
+        };
+
+
+
+
+        
+        
+
+        
     </script>
-
+    
 </body>
-<!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v9.0'
-    });
-  };
-
-  (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<!-- Your Chat Plugin code -->
-<div class="fb-customerchat"
-  attribution=setup_tool
-  page_id="112138090322381">
-</div>
-
 </html>
-
-
