@@ -41,7 +41,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: url(/img/banner.jpg) no-repeat right center fixed; 
+    background: url(./img/banner.jpg) no-repeat right center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
